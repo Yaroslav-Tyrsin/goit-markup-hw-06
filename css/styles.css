@@ -603,12 +603,9 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-bottom: 16px;
-  display: inline-block;
+  display: block;
   align-self: center;
   text-align: center;
-  text-align: center;
-  padding-left: 102px;
-  padding-right: 102px;
 }
 
 .footer-spam {
@@ -633,6 +630,7 @@ img {
 
 .logo-footer-container {
   margin-bottom: 72px;
+  max-width: 264px;
 }
 
 .footer-links {
@@ -1019,6 +1017,11 @@ img {
     padding-left: 16px;
     padding-right: 16px;
   }
+
+  .wrapper {
+    align-items: center;
+  }
+
   .header-logo {
     margin-right: 120px;
   }
@@ -1028,9 +1031,14 @@ img {
     gap: 40px;
   }
 
+  .menu-link {
+    padding: 24px 0;
+  }
+
   .address-list {
     display: flex;
     flex-direction: column;
+    gap: 12px;
   }
 
   .open-menu-btn {
@@ -1038,9 +1046,8 @@ img {
   }
 
   .adress-link {
-    padding-top: 12px;
-    padding-bottom: 12px;
     font-size: 12px;
+    padding: 0;
   }
 
   .hero {
@@ -1119,10 +1126,31 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     text-align: start;
+    align-items: unset;
+    justify-content: unset;
+    max-width: 584px;
+    gap: 72px 24px;
   }
 
   .footer-container {
-    margin-right: auto;
+    margin-right: unset;
+    margin-left: unset;
+    width: auto;
+    height: auto;
+  }
+
+  .logo-footer-container {
+    margin-bottom: unset;
+    max-width: unset;
+  }
+
+  .social-media {
+    margin-left: unset;
+    margin-bottom: unset;
+  }
+
+  .subscribe-paragraph {
+    text-align: start;
   }
 
   .subscribe-form {
@@ -1273,7 +1301,14 @@ img {
 
   .footer-flex {
     display: flex;
-    align-items: baseline;
+    align-items: start;
+    gap: none;
+    flex-wrap: nowrap;
+  }
+
+  .footer-text {
+    width: 264px;
+    height: 72px;
   }
 
   .social-media {
