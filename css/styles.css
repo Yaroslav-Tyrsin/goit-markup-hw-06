@@ -148,7 +148,7 @@ img {
   position: fixed;
   top: 0;
   background: #fff;
-  padding-top: 24px;
+  padding-top: 72px;
   padding-left: 16px;
   padding-bottom: 40px;
   padding-right: 24px;
@@ -168,7 +168,7 @@ img {
 }
 
 .mob-menu-btn {
-  display: block;
+  position: absolute;
   margin-left: auto;
   margin-bottom: 24px;
   border-radius: 4px;
@@ -186,7 +186,6 @@ img {
   line-height: 1.11111;
   letter-spacing: 0.02em;
   color: #404bbf;
-  margin-bottom: 168px;
 }
 
 .mob-list-item:not(:last-child) {
@@ -418,13 +417,13 @@ img {
 .team-list {
   display: flex;
   gap: 72px;
-  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .team-item {
   background: #fff;
-  width: 100%;
+  width: 264px;
   border-radius: 0px 0px 4px 4px;
   background: #fff;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -433,7 +432,6 @@ img {
 }
 
 .team-item img {
-  display: inline-block;
   width: 100%;
   height: auto;
 }
@@ -573,7 +571,6 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
-  padding-left: 16px;
 }
 
 .portfolio-text {
@@ -581,13 +578,11 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  padding-left: 16px;
 }
 
 .page-bottom {
   background-color: #2e2f42;
-
-  padding: 96px 16px;
+  padding: 96px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -948,7 +943,7 @@ img {
 }
 
 .subscribe-form {
-  gap: 24px;
+  gap: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -967,7 +962,7 @@ img {
 .form-input {
   border: 1px solid #fff;
   border-radius: 4px;
-  width: 264px;
+  width: 288px;
   height: 40px;
   background-color: transparent;
   font-family: "Roboto", sans-serif;
@@ -1051,7 +1046,7 @@ img {
   }
 
   .hero {
-    padding: 112 px 0;
+    padding: 112px 0;
     max-width: 768px;
     background-image: linear-gradient(
         to bottom,
@@ -1144,9 +1139,16 @@ img {
     max-width: unset;
   }
 
+  .footer-logo {
+    text-align: start;
+  }
   .social-media {
     margin-left: unset;
     margin-bottom: unset;
+  }
+
+  .social-media-paragraph {
+    text-align: start;
   }
 
   .subscribe-paragraph {
@@ -1155,6 +1157,10 @@ img {
 
   .subscribe-form {
     flex-direction: row;
+  }
+
+  .form-input {
+    width: 264px;
   }
 
   .modal {
@@ -1196,6 +1202,8 @@ img {
   .adress-link {
     padding-top: 24px;
     padding-bottom: 24px;
+    font-size: 16px;
+    line-height: 1.5;
   }
 
   .hero {
